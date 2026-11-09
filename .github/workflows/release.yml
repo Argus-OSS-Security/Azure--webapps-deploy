@@ -1,18 +1,19 @@
 name: Release
 
-on:
-  workflow_dispatch:
-    inputs:
-      tag:
-        description: 'Tag to release or revert to (e.g., v3.2.1)'
-        required: true
-        type: string
-      revert:
-        description: 'Revert releases/vX to this existing tag?'
-        required: false
-        type: boolean
-        default: false
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       tag:
+#         description: 'Tag to release or revert to (e.g., v3.2.1)'
+#         required: true
+#         type: string
+#       revert:
+#         description: 'Revert releases/vX to this existing tag?'
+#         required: false
+#         type: boolean
+#         default: false
+# 
 jobs:
   release:
     runs-on: ubuntu-latest

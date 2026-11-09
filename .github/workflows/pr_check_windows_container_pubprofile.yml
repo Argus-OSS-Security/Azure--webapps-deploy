@@ -1,11 +1,12 @@
 name: pr_check_windows_container_publishprofile
 
-on:
-  pull_request:
-    branches:
-      - master
-      - 'releases/*'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - master
+#       - 'releases/*'
+# 
 permissions:
   contents: read
 

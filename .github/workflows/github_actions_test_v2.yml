@@ -3,13 +3,14 @@
 
 name: Build and deploy to Azure App Services using v2
 
-on:
-  push:
-    branches:
-      - master
-  schedule: 
-    - cron: "0 0/3 * * *"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - master
+#   schedule: 
+#     - cron: "0 0/3 * * *"
+# 
 jobs:
   build-and-deploy-dotnet-app:
     runs-on: ubuntu-latest
